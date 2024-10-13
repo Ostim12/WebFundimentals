@@ -1,0 +1,11 @@
+.custom-navbar {
+    background-color: #680fcd;
+}
+.hero {
+    background: linear-gradient(45deg, #c9cdd2, #6610f2);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}

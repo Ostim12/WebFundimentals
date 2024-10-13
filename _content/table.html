@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tables </title>
+  <link rel="stylesheet" href="_content/css/styles.css">
+  <style>
+    thead{background-color: rgb(151, 151, 151);}
+    tbody{background-color: rgb(255, 255, 255);}
+    tfoot{background-color: rgb(190, 190, 190);}
+  </style>
+</head>
+<body>
+  <table>
+    <caption> class details </caption>
+    <thead>
+      <th scope="col">Lecturers</th>
+      <th scope="col">Papers</th>
+      <th scope="col">Class Nos.</th>
+    </thead>  
+    <tr>
+      <th scope="row">Richard</th>
+      <td>I111</td>
+      <td rowspan="2">100</td>
+    </tr>
+    <tr>
+      <th scope="row">Greame</th>
+      <td>T201</td>
+    </tr>
+    <tr>
+      <th scope="row">Sandra</th>
+      <td>I100</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th scope="row" colspan="3">Simon</th>
+
+    </tr>
+    <tr>
+      <th scope="row">Min</th>
+      <td>I201</td>
+      <td>60</td>
+    </tr>
+    <tfoot>
+      <td colspan="3">the table footer</td>
+    </tfoot>
+  </table>
+  <hr>
+  <table>
+    <caption>products </caption>
+    <thead>
+      <tr>
+        <th scope="col" rowspan="2">product name</th>
+        <th scope="col" colspan="4">2023</th>
+      </tr>
+      <tr>
+        <th scope="col">Q1</th>
+        <th scope="col">Q2</th>
+        <th scope="col">Q3</th>
+        <th scope="col">Q4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">product A</th>
+        <td>$1000</td>
+        <td>$1000</td>
+        <td>$1000</td>
+        <td>$1000</td>
+      </tr>
+      <tr>
+        <th scope="row">product B</th>
+        <td>$1000</td>
+        <td>$1000</td>
+        <td>$1000</td>
+        <td>$1000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">Copyright 2023</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

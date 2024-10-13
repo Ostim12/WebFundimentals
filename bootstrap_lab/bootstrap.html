@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap 5.3 Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap_custom.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">yourbrand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navebar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">welcom to yourbrand</h1>
+            <p class="lead mb-4">discover amazing features that will revoltionize your workflow.</p>
+            <button class="btn btn-light btn-lg">get started <i class="bi bi-arrow-right"></i></button>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-gear fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">easy to use</h5>
+                            <p class="card-text">out intuitive interface makes it simple to get started.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-gear fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">easy to use</h5>
+                            <p class="card-text">out intuitive interface makes it simple to get started.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="bi bi-gear fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">easy to use</h5>
+                            <p class="card-text">out intuitive interface makes it simple to get started.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4"> contact us</h2>
+            <div class="row">
+                <form class="col-md-6 col-sm-12">
+                    <div class="mb-3">
+                        <label for="name" class="form-lable">name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-lable">email address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <lable for="message" class="form-lable">message</lable>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">submit</button>
+                </form>
+                <div class="col-md-6 col-sm-12">
+                    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a" alt="contact us" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>yourbrand</h5>
+                    <p>making your workflow easier since 2023</p>
+                </div>
+                <div class="row"></div>
+                <div class="col-md-6 text-md-end">
+                    <h5>connect with us</h5>
+                    <ul class="list-inline">
+                        
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

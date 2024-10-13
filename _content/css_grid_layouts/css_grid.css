@@ -1,0 +1,35 @@
+header,nav,section,article,main,aside,footer,div{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+header{ background-color: lightblue;}
+nav{background-color: lightgreen}
+section{background-color: lightgrey;}
+article{background-color: lightcoral;}
+main{background-color: lightyellow;}
+aside{background-color: lightpink;}
+footer{background-color: lightgoldenrodyellow;}
+
+body{
+    display: grid;
+    grid-gap: 10px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+@media (max-width:768px){
+    section {
+        grid-template-columns: 1fr;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+}
