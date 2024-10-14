@@ -9,7 +9,13 @@
     <script src="assignment.js" defer></script>
     <script src="OpenLayers.js"></script>
 </head>
+
 <body onload="init();">
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="image2" src="images/people.jpg" alt="a group of ladys" class="modal-image">
+        </div>
+    </div>
     <h4 class="page-nav-bar"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a>In The News</a></h4>
     <div class="main-grid">
         
@@ -30,7 +36,7 @@
                 <h4>Items</h4>
             </div>
             <div class="grid-item col-1">
-                <img src="images/people.jpg" alt="a group of ladys"  class="grid-image">
+                <img id="image" src="images/people.jpg" alt="a group of ladys"  class="grid-image">
             </div>
             <div class="grid-item col-2">
                 <p class="middle-text">It is a long established fact that a</p>
@@ -59,14 +65,14 @@
             </div>
             <div class="grid-item col-1">
                 <div class="button-container">
-                    <button class="button">Display X, Y</button>
-                    <button class="button">Theme</button>
-                    <button class="button">Modal</button>
-                    <button class="button">Swap Image</button>
+                    <button class="button" onmouseover="displayXY()" onmouseout="showDataTable()">Display X, Y</button>
+                    <button class="button" onclick="themeClick()">Theme</button>
+                    <button class="button" onclick="modal()">Modal</button>
+                    <button class="button" onclick="swapImage()">Swap Image</button>
                 </div>
             </div>
             <div class="grid-item col-2">
-                <table class="data-table">
+                <table id="table" class="data-table" >
                     <thead>
                         <tr>
                             <th colspan="3">Table Data</th>
@@ -104,6 +110,8 @@
                         </tr>
                     </tfoot>
                 </table>
+                <p id="mousePosX">test </p>
+                <p id="mousePosY">test</p>
             </div>
             <div class="grid-item col-3">
                 <div class="map-space">

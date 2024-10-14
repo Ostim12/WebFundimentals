@@ -1,3 +1,6 @@
+
+
+// map function
 function init() {
     map = new OpenLayers.Map("ucolMap");
     var mapnik         = new OpenLayers.Layer.OSM();
@@ -11,4 +14,77 @@ function init() {
     var markers = new OpenLayers.Layer.Markers( "Markers" );
     map.addLayer(markers);
     markers.addMarker(new OpenLayers.Marker(position));
+}
+
+
+let handleMousemove = (event) => {
+    let posX = event.x
+    let posY = event.y
+    document.getElementById("mousePosX").innerText = `mouse X: ${posX}`
+    document.getElementById("mousePosY").innerText = `mouse Y: ${posY}`
+  }
+document.addEventListener('mousemove', handleMousemove);
+
+function displayXY(){
+    document.getElementById("table").style.display ="none";
+    document.getElementById("mousePosY").style.display ="block";
+    document.getElementById("mousePosX").style.display ="block";
+    console.log('hidden');
+}
+
+function showDataTable(){
+    document.getElementById("mousePosY").style.display ="none";
+    document.getElementById("mousePosX").style.display ="none";
+    document.getElementById("table").style.display ="table";
+    console.log('shown');
+}
+
+
+function themeClick() {
+
+    let root = document.querySelector(':root');
+    let rootStyle = getComputedStyle(root);
+    let curentBackground = rootStyle.getPropertyValue('--backgroundColour')
+    if (curentBackground == '#428bca'){
+        root.style.setProperty('--backgroundColour', 'green');
+        console.log('green time')
+    }
+    else{
+        if (curentBackground == 'green'){
+            root.style.setProperty('--backgroundColour', '#428bca');
+            console.log('blue time')
+        }
+    }
+}
+
+
+function modal(){
+
+    if (document.getElementById("modal").style.display == "block"){
+        document.getElementById("modal").style.display = "none"
+    }
+    else{
+            document.getElementById("modal").style.display ="block";
+    }
+}
+
+function swapImage(){
+    if (document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/people.jpg"){
+        document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/business.jpg"
+        document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/business.jpg"
+        
+    }
+    else{
+        console.log(document.getElementById("image").src)
+        if(document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/business.jpg"){
+            document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/sports.jpg"
+            document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/sports.jpg"
+        }
+        else{
+            if(document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/sports.jpg"){
+                document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
+                document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
+            }
+        }
+    }
 }

@@ -1,3 +1,8 @@
+:root{
+    --backgroundColour: #428bca;
+}
+
+
 div,h4,p{
     padding: 0px;
     margin: 0px;
@@ -18,13 +23,13 @@ body{
     font-family: Verdana;
     margin: 0px;
     padding: 10px;
-    background-color:#428bca;
+    background-color:var(--backgroundColour);
     color: white;
 }
 
 .main-grid{
     
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px;
     font-family: Verdana;
     font-size: 16px;
     margin: 0px auto auto auto;
@@ -72,7 +77,7 @@ body{
 }
 
 .grid-heading{
-    background-color:#428bca;
+    background-color:var(--backgroundColour);
     border-radius:  0px 10px 0px 0px;
     color: white;
     padding: 0px 20px;
@@ -109,7 +114,7 @@ body{
     width: 150;
     color: white;
     border: #428bca;
-    background-color: #428bca;
+    background-color: var(--backgroundColour);
     text-align: center;
     border-radius: 4px;
     margin: 5px;
@@ -127,6 +132,7 @@ table,tr, td,th{
 }
 
 table{
+    display: table;
     columns: 1fr 1fr 1fr;
     margin: 10px 10px 10px 10px ;
     padding: 10px ;
@@ -155,9 +161,38 @@ tfoot{
     margin: 3px;
 }
 .footer{
-    background-color: #428bca;
+    background-color: var(--backgroundColour);
     color: white;
     border-radius: 0px 0px 10px 10px;
     padding: 5px 20px;
     
+}
+
+#mousePosX, #mousePosY{
+    margin: 10px;
+    display: none;
+}
+
+.modal{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+.modal-image{
+    width: 100%;
+    
+    
+}
+.modal-content{
+    
+    width: 50%;
+    margin:  10px auto;
+    border-radius: 10px;
+    border: #d3d3d3 10px solid;
+    background-color: white;
+    padding: 10px;
 }
