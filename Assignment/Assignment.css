@@ -1,0 +1,25 @@
+p{
+    padding: 0px;
+    margin: 0px;
+}
+.grid{
+    margin: 0px;
+    width: 1000px;
+    padding: 0px;
+    align-self: center
+}
+
+
+.grid-container {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    
+}
+
+.grid-item{
+    width: 1fr;
+    background-color: gray;
+    margin: auto;
+    padding: 10px;
+}
