@@ -46,11 +46,11 @@ function themeClick() {
     let rootStyle = getComputedStyle(root);
     let curentBackground = rootStyle.getPropertyValue('--backgroundColour')
     if (curentBackground == '#428bca'){
-        root.style.setProperty('--backgroundColour', 'green');
+        root.style.setProperty('--backgroundColour', '#11C034');
         console.log('green time')
     }
     else{
-        if (curentBackground == 'green'){
+        if (curentBackground == '#11C034'){
             root.style.setProperty('--backgroundColour', '#428bca');
             console.log('blue time')
         }
@@ -77,14 +77,8 @@ function swapImage(){
     else{
         console.log(document.getElementById("image").src)
         if(document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/business.jpg"){
-            document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/sports.jpg"
-            document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/sports.jpg"
-        }
-        else{
-            if(document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/sports.jpg"){
-                document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
+            document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
                 document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
-            }
         }
     }
 }
