@@ -5,22 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin - Assignment</title>
     <link rel="stylesheet" href="Assignment.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assignment.js" defer></script>
+    <script src="OpenLayers.js"></script>
 </head>
-<body>
-    <h4 class="page-heading">page heading</h4>
+<body onload="init();">
+    <h4 class="page-nav-bar"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <a>In The News</a></h4>
     <div class="main-grid">
-        <h4 class="grid-heading">Grid heading</h4>
+        
+        <h1 class="main-banner" >Daily Online News</h1>
+        <nav class="grid-nav-bar">
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Home</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">World</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Weather</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Sport</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Politics</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Tech</a>
+            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Entertainment</a>
+        </nav>
         <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
+            <div class="grid-heading span-2">
+                <h4>Hot</h4></div>
+            <div class="grid-heading span-1">
+                <h4>Items</h4>
+            </div>
+            <div class="grid-item col-1">
+                <img src="images/people.jpg" alt="a group of ladys"  class="grid-image">
+            </div>
+            <div class="grid-item col-2">
+                <p class="middle-text">It is a long established fact that a</p>
+                <p class="middle-text">reader will be distracted by the</p>
+                <p class="middle-text">readable content of a page when</p>
+                <p class="middle-text">looking at its layout. The point of</p>
+                <p class="middle-text">using Lorem Ipsum is that it has a</p>
+                <p class="middle-text">more-or-less normal distribution of</p>
+                <p class="middle-text">letters.</p>
+            </div>
+            <div class="grid-item col-3"> 
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+                <p class="left-text"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> <a href="">Lorem ipsum dolor sit</a></p>
+            
+            </div>
+            <div class="grid-heading span-2">
+                <h4>Interaction</h4>
+            </div>
+            <div class="grid-heading span-1">
+                <h4>Location</h4>
+            </div>
+            <div class="grid-item col-1">
+                <div class="button-container">
+                    <button class="button">Display X, Y</button>
+                    <button class="button">Theme</button>
+                    <button class="button">Modal</button>
+                    <button class="button">Swap Image</button>
+                </div>
+            </div>
+            <div class="grid-item col-2">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Table Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td rowspan="2">7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td rowspan="2">13</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="grid-item col-3">
+                <div class="map-space">
+                    <div id="ucolMap"></div>
+                    <p class="view-larger-map"><a href="">View Larger Map</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h4><i class="fa fa-copyright" aria-hidden="true"></i> Austin Scrivener Ltd. &#40;Devolped in Chrome&#41;</h4>
         </div>
     </div>
 </body>
