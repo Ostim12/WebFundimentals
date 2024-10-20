@@ -1,11 +1,10 @@
 
-let handleMousemove = (event) => {
-    let posX = event.x
-    let posY = event.y
+function mousePos(event){
+    let posX = event.clientX
+    let posY = event.clientY
     document.getElementById("mousePosX").innerText = `mouse X: ${posX}`
     document.getElementById("mousePosY").innerText = `mouse Y: ${posY}`
-  }
-document.addEventListener('mousemove', handleMousemove);
+}
 
 function displayXY(){
     document.getElementById("table").style.display ="none";
