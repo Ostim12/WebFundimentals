@@ -7,7 +7,7 @@ function init() {
     var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
     var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
     var position       = new OpenLayers.LonLat(175.61353382992954,-40.35221938661656).transform( fromProjection, toProjection);
-    var zoom           = 18; 
+    var zoom           = 13; 
 
     map.addLayer(mapnik);
     map.setCenter(position, zoom );
@@ -68,17 +68,22 @@ function modal(){
     }
 }
 
+
+const imageLocation = document.getElementById("image").src
+let imageSurce = imageLocation.split("business.jpg")[0]
+console.log(imageSurce)
+
 function swapImage(){
-    if (document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/people.jpg"){
-        document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/business.jpg"
-        document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/business.jpg"
+    console.log(document.getElementById("image").src)
+    if (document.getElementById("image").src == (imageSurce+"people.jpg")){
+        document.getElementById("image").src = (imageSurce+"business.jpg")
+        document.getElementById("image2").src = (imageSurce+"business.jpg")
         
     }
     else{
-        console.log(document.getElementById("image").src)
-        if(document.getElementById("image").src == "http://127.0.0.1:5500/Assignment/images/business.jpg"){
-            document.getElementById("image").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
-                document.getElementById("image2").src = "http://127.0.0.1:5500/Assignment/images/people.jpg"
+        if(document.getElementById("image").src == (imageSurce+"business.jpg")){
+            document.getElementById("image").src = (imageSurce+"people.jpg")
+                document.getElementById("image2").src = (imageSurce+"people.jpg")
         }
     }
 }

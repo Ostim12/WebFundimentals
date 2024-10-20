@@ -40,13 +40,13 @@ body{
 
 .main-banner{
     margin: 0px;
-    padding: 10px 10px 10px 20px;
+    padding: 20px;
     background-image: url("images/background.jpg");
     color: white;
 }
 
 .grid-nav-bar{
-    padding: 5px 5px 5px 0px;
+    padding: 10px 5px 10px 0px;
 }
 
 .grid-container {
@@ -82,7 +82,7 @@ body{
     background-color:var(--backgroundColour);
     border-radius:  0px 10px 0px 0px;
     color: white;
-    padding: 0px 20px;
+    padding: 5px 20px;
 }
 .span-2{
     
@@ -91,7 +91,6 @@ body{
 }
 .span-1{
     margin: 0px 0px 0px 5px;
-    padding: 0px 0px 0px 20px;
 }
 
 .middle-text{
@@ -181,6 +180,7 @@ tfoot{
     z-index: 1;
     position: fixed;
     width: 100%;
+    padding: 50px;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
 }
@@ -192,7 +192,7 @@ tfoot{
 }
 .modal-content{
     
-    width: 50%;
+    width: 500px;
     margin:  10px auto;
     border-radius: 10px;
     border: #d3d3d3 10px solid;
