@@ -51,20 +51,20 @@ function modal(){
 
 
 const imageLocation = document.getElementById("image").src
-let imageSurce = imageLocation.split("business.jpg")[0]
-console.log(imageSurce)
+let imageSource = imageLocation.split("business.jpg")[0]
+console.log(imageSource)
 
 function swapImage(){
     console.log(document.getElementById("image").src)
-    if (document.getElementById("image").src == (imageSurce+"people.jpg")){
-        document.getElementById("image").src = (imageSurce+"business.jpg")
-        document.getElementById("image2").src = (imageSurce+"business.jpg")
+    if (document.getElementById("image").src == (imageSource+"people.jpg")){
+        document.getElementById("image").src = (imageSource+"business.jpg")
+        document.getElementById("image2").src = (imageSource+"business.jpg")
         
     }
     else{
-        if(document.getElementById("image").src == (imageSurce+"business.jpg")){
-            document.getElementById("image").src = (imageSurce+"people.jpg")
-                document.getElementById("image2").src = (imageSurce+"people.jpg")
+        if(document.getElementById("image").src == (imageSource+"business.jpg")){
+            document.getElementById("image").src = (imageSource+"people.jpg")
+                document.getElementById("image2").src = (imageSource+"people.jpg")
         }
     }
 }
