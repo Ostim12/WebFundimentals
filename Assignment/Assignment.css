@@ -53,7 +53,6 @@ body{
     margin: 0px;
     display: grid;
     grid-template-columns: 333.3px 333.3px 333.3px ;
-    
 }
 .grid-item{
     border: 10px solid #d3d3d3;
@@ -151,9 +150,10 @@ tbody{
 tfoot{
     background-color: lightgray;
 }
-#ucolMap{
+.ucolMap{
     height: 130px;
-    width: 100%;
+    width: 98.5%; /* 100% goes over the padding */
+    margin: 0px;
 }
 
 .map-space{
