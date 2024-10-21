@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="Assignment.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="assignment.js" defer></script>
-    <script src="OpenLayers.js"></script>
 </head>
 
-<body onload="init();" onmousemove="mousePos(event)">
+<body>
     <div id="modal" class="modal">
         <div class="modal-content">
-            <img id="image2" src="images/business.jpg" alt="a group of ladys" class="modal-image">
+            <img id="modal-image" src="images/business.jpg" alt="a group of ladys" class="modal-image">
         </div>
     </div>
     <header>
@@ -67,10 +66,10 @@
             </div>
             <div class="grid-item col-1">
                 <div class="button-container">
-                    <button class="button" onmouseover="displayXY()" onmouseout="showDataTable()">Display X, Y</button>
-                    <button class="button" onclick="themeClick()">Theme</button>
-                    <button class="button" onclick="modal()">Modal</button>
-                    <button class="button" onclick="swapImage()">Swap Image</button>
+                    <button class="button" id="btn-display-x-y"     >Display X, Y</button>
+                    <button class="button" id="btn-theme"           >Theme</button>
+                    <button class="button" id="btn-modal"           >Modal</button>
+                    <button class="button" id="btn-swap-image"      >Swap Image</button>
                 </div>
             </div>
             <div class="grid-item col-2">
@@ -122,7 +121,7 @@
             </div>
         </div>
         <footer class="footer">
-            <h4><i class="fa fa-copyright" aria-hidden="true"></i> Austin Scrivener Ltd. &#40;Developed in Chrome&#41;</h4>
+            <h4><i class="fa fa-copyright" aria-hidden="true"></i> Austin Scrivener Ltd. (Developed in Chrome)</h4>
         </footer>
     </div>
 </body>
