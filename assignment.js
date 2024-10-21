@@ -1,4 +1,3 @@
-
 function mousePos(event){
     let posX = event.clientX
     let posY = event.clientY
@@ -20,9 +19,7 @@ function showDataTable(){
     console.log('shown');
 }
 
-
 function themeClick() {
-
     let root = document.querySelector(':root');
     let rootStyle = getComputedStyle(root);
     let curentBackground = rootStyle.getPropertyValue('--backgroundColour')
@@ -38,9 +35,7 @@ function themeClick() {
     }
 }
 
-
 function modal(){
-
     if (document.getElementById("modal").style.display == "block"){
         document.getElementById("modal").style.display = "none"
     }
@@ -48,7 +43,6 @@ function modal(){
             document.getElementById("modal").style.display ="block";
     }
 }
-
 
 const imageLocation = document.getElementById("image").src
 let imageSource = imageLocation.split("business.jpg")[0]
@@ -59,7 +53,6 @@ function swapImage(){
     if (document.getElementById("image").src == (imageSource+"people.jpg")){
         document.getElementById("image").src = (imageSource+"business.jpg")
         document.getElementById("image2").src = (imageSource+"business.jpg")
-        
     }
     else{
         if(document.getElementById("image").src == (imageSource+"business.jpg")){
