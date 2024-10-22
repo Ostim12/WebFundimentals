@@ -73,7 +73,7 @@ const imageLocation = document.getElementById("image").src
 let imageSource = imageLocation.split("business.jpg")[0]
 console.log(imageSource)
 
-function changeImage(object,imageName){
+function changeImage(object,imageName,altText){
     document.getElementById(object).src = (imageSource+imageName)
 }
 
